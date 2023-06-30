@@ -1,17 +1,17 @@
 import 'package:intl/intl.dart';
-import 'package:wdf_software/database/taskdb.dart';
-import 'package:wdf_software/pages/task/task_detail.dart';
 import 'package:wdf_software/widgets/theme.dart';
 import 'package:flutter/material.dart';
 
 class EditTaskPage extends StatefulWidget {
   const EditTaskPage({Key? key}) : super(key: key);
 
+
   @override
   State<EditTaskPage> createState() => _EditTaskPageState();
 }
 
 class _EditTaskPageState extends State<EditTaskPage> {
+
   final _formKey = GlobalKey<FormState>();
   DateTime _selectedDate = DateTime.now();
 
@@ -122,13 +122,13 @@ class _EditTaskPageState extends State<EditTaskPage> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             children: [
                               ElevatedButton(
+
                                 onPressed: () {
                                   if (_formKey.currentState!.validate()) {
                                     // TODO: Submit form
-                                    // Navigator.of(context).pop();
                                     // Navigator.push(
                                     //   context,
-                                    //   MaterialPageRoute(builder: (context) => const TaskDetailPage(task: null,)),
+                                    //   MaterialPageRoute(builder: (context) => const TaskDetailPage(task: myTask,)),
                                     // );
                                   }
                                 },

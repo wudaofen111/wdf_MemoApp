@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 
 // 定义主屏幕小部件
 class TaskDetailPage extends StatelessWidget {
-  const TaskDetailPage({super.key, required MyTask task});
+  const TaskDetailPage({super.key, required this.task});
 
-  // final MyTask task;
+  final MyTask task;
 
   @override
   Widget build(BuildContext context) {
